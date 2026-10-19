@@ -28,6 +28,7 @@ public class Filme {
     @Enumerated(EnumType.STRING)
     private CategoriaFilmeEnum categoria;
     @Column(name = "TP_CLASSIFICACAO")
+    @Enumerated(EnumType.STRING)
     private ClassificacaoIndicativaEnum classificacao;
     @Column(name = " NR_ANO")
     private Integer ano;
@@ -42,6 +43,7 @@ public class Filme {
     @Column(name = " NR_AVALIACAO ")
     private Double avaliacao;
     @Column(name = "CHK_EM_CARTAZ")
+    @Enumerated(EnumType.STRING)
     private SimNaoEnum emCartaz;
     @Transient
     private LocalDateTime dataExclusao;
